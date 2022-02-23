@@ -1,0 +1,6 @@
+def most_frequent(words):
+    d = {}
+    for w in set(words):
+        d[w] = words.count(w)
+    # d = list(zip(d.keys(), d.values()))
+    return "".join(sorted(d)[::-1])
